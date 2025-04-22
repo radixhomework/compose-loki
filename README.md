@@ -1,1 +1,1 @@
-# compose-template
+# compose-loki
