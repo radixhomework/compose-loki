@@ -14,7 +14,7 @@ common:
 
 storage_config:
   aws:
-    s3: ${MINIO_SCHEME}://${MINIO_USER}:${MINIO_PASSWORD}@${MINIO_URL}/${MINIO_BUCKET}
+    s3: ${S3_SCHEME}://${S3_USER}:${S3_PASSWORD}@${S3_URL}/${S3_BUCKET}
     s3forcepathstyle: true
   tsdb_shipper:
     active_index_directory: /loki/index
