@@ -5,11 +5,11 @@ services:
       - "${LOKI_PORT}:3100"
     command: ["-config.file=/etc/loki.yaml", "-config.expand-env=true"]
     environment:
-      - MINIO_SCHEME=${MINIO_SCHEME}
-      - MINIO_URL=${MINIO_URL}
-      - MINIO_USER=${MINIO_USER}
-      - MINIO_PASSWORD=${MINIO_PASSWORD}
-      - MINIO_BUCKET=${MINIO_BUCKET}
+      - S3_SCHEME=${S3_SCHEME}
+      - S3_URL=${S3_URL}
+      - S3_USER=${S3_USER}
+      - S3_PASSWORD=${S3_PASSWORD}
+      - S3_BUCKET=${S3_BUCKET}
     volumes:
       - loki:/data
     restart: always
